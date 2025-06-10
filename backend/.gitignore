@@ -1,0 +1,25 @@
+# .gitignore para AZIA backend
+# Entornos virtuales
+.venv/
+
+# Archivos y carpetas de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
+# Archivos y carpetas generados automáticamente
+api/processed_files/
+api/uploaded_files/
+api/services/agents/vectorstore_chromadb_automatic/
+
+# Archivos de base de datos
+*.sqlite3
+
+# Archivos PDF subidos
+api/uploaded_files/*.pdf
+
+# Archivos de resultados procesados
+api/processed_files/*.md
+api/processed_files/*.pdf
