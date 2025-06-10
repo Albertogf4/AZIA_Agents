@@ -1,6 +1,8 @@
 # 🤖 AZIA: AI Global Search Agent
 
-<img src="AZIA cover.png" alt="Logo de AZIA" width="600"/>
+<div align="center">
+  <img src="AZIA cover.png" alt="Logo de AZIA" width="600"/>
+</div>
 
 AZIA is the AI platform for company analysis, developed in collaboration with [Azvalor Asset Management](https://www.azvalor.com/en/). It offers a suite of intelligent agents designed to enhance financial research and decision-making:
 - 🌐**RAG Agent:**  Searches and analyzes the documents you upload (such as financial reports or company filings) to extract relevant insights that you request for investment analysis.
