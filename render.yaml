@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: backend
+    env: docker
+    plan: free
+    dockerfilePath: ./backend/Dockerfile
+    buildCommand: ""
+    startCommand: ""
+    envVars:
+      - key: FLASK_APP
+        value: api/app.py
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
+      - key: LLAMA_CLOUD_API_KEY
+        sync: false
+    ports:
+      - 5328
+
+  - type: web
+    name: frontend
+    env: docker
+    plan: free
+    dockerfilePath: ./frontend/Dockerfile
+    buildCommand: ""
+    startCommand: ""
+    envVars:
+      - key: NEXT_PUBLIC_API_BASE_URL
+        value: https://backend.onrender.com/api
+    ports:
+      - 3000
